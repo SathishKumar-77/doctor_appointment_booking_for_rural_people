@@ -1,0 +1,121 @@
+.rich-form-container {
+    min-height: 70vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rich-form-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    animation: slideUp 0.5s ease-out;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .rich-form-title {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .title-icon {
+    color: #3498db;
+    font-size: 28px;
+  }
+  
+  .rich-form-group {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .rich-input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7f8c8d;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .rich-form-input,
+  .rich-form-select {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 2px solid #ecf0f1;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: #f9fbfc;
+  }
+  
+  .rich-form-input:focus,
+  .rich-form-select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.2);
+    outline: none;
+  }
+  
+  .rich-form-input:hover,
+  .rich-form-select:hover {
+    border-color: #bdc3c7;
+  }
+  
+  .rich-form-group:hover .rich-input-icon {
+    color: #3498db;
+  }
+  
+  .rich-submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .rich-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+  }
+  
+  .rich-submit-btn.submitted {
+    background: linear-gradient(45deg, #27ae60, #2ecc71);
+  }
+  
+  .success-icon {
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  @media (max-width: 768px) {
+    .rich-form-card {
+      padding: 20px;
+      margin: 20px;
+    }
+  }

@@ -1,0 +1,165 @@
+/* DoctorForm.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+/* Container Styles */
+.container-fluids {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  min-height: 90vh;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+/* Form Styles */
+.doctor-form {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-form h2 {
+  font-weight: 700;
+  color: #1976d2;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.doctor-form h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #1976d2;
+  border-radius: 2px;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #455a64;
+}
+
+.form-control {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 10px rgba(25, 118, 210, 0.2);
+}
+
+.input-group-text {
+  background: #f5f5f5;
+  border-radius: 10px 0 0 10px;
+  color: #1976d2;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #1976d2, #2196f3);
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #1565c0, #1976d2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(25, 118, 210, 0.4);
+}
+
+/* Doctors List Styles */
+.doctors-list-container {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-height: 700px;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+
+.doctors-list-container:hover {
+  transform: translateY(-5px);
+}
+
+.list-group-item {
+  background: #f8fafc;
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+
+.list-group-item h5 {
+  font-weight: 600;
+  color: #1976d2;
+}
+
+.specialization {
+  color: #666;
+  font-weight: 400;
+}
+
+.list-group-item p,
+.list-group-item small {
+  color: #455a64;
+  margin: 0.3rem 0;
+}
+
+.btn-warning {
+  background: #ffb300;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-danger {
+  background: #ef5350;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover,
+.btn-danger:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Scrollbar Styling */
+.doctors-list-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.doctors-list-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.doctors-list-container::-webkit-scrollbar-thumb {
+  background: #1976d2;
+  border-radius: 10px;
+}
+
+.doctors-list-container::-webkit-scrollbar-thumb:hover {
+  background: #1565c0;
+}
